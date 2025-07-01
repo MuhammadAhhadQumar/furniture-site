@@ -3,94 +3,107 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: none;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'mukta', sans-serif;
 }
 html {
   font-size: 62.5%;
 }
-
-/* Nav */
 nav {
-  width: 100;
-  height: 19rem;
-  background-color: #fff;
+  width: 100%;
+  height: 17rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #073e72;
   box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1);
 }
 .nav-top {
   display: flex;
   align-items: center;
+  /* width: 100%; */
+  /* justify-content: space-evenly; */
 }
 .logo {
   display: flex;
   align-items: center;
-  margin-right: 4rem;
-  cursor: pointer;
+  margin-right: 6rem;
 }
 .logo i {
-  margin-right: 1.5rem;
-  font-size: 6rem;
+  font-size: 4.2rem;
   color: #f8872b;
+  margin-right: 0.9rem;
 }
 .logo span {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'kenia', cursive;
-  color: #073e72;
 }
 .search-bar {
+  display: flex;
+  align-items: center;
   position: relative;
 }
+.search-bar i {
+  position: absolute;
+  left: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
 .search-bar input {
-  width: 52rem;
-  padding: 1.2rem 1rem 1.2rem 3.7rem;
+  width: 47rem;
+  padding: 1rem 3rem;
   border: none;
-  background-color: #e9edf1;
+  background-color: #eaeff3;
   border-radius: 0.5rem;
 }
 .search-bar input::placeholder {
   color: #073e72;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.search-bar i {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-  font-size: 1.5rem;
+  font-weight: 400;
 }
 .user {
-  font-size: 1.5rem;
-  color: #073e72;
+  margin-left: 6rem;
   display: flex;
   align-items: center;
-  margin-left: 2rem;
-  cursor: pointer;
+  justify-content: center;
+  color: #073e72;
+  font-size: 1.5rem;
 }
 .user i,
 .user span {
   margin-right: 1rem;
 }
+li {
+  list-style: none;
+}
 .nav-list {
-  margin-top: 2rem;
+  padding-top: 5rem;
+  width: 100%;
 }
 .nav-list ul {
-  list-style: none;
   display: flex;
-  font-size: 1.5rem;
-  color: #073e72;
+  align-items: center;
+  justify-content: center;
 }
 .nav-list ul li {
-  padding-right: 2rem;
+  margin: 0 3rem;
+  font-size: 1.5rem;
+  color: #073e72;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 0.2rem solid #eaeff3;
+  padding-right: 3rem;
+  border-right: 1px solid #e9edf1;
 }
-.nav-list ul li:not(:first-child) {
-  margin-left: 8rem;
+
+.nav-list ul li:last-child {
+  border-right: none;
 }
+/* Colors 
+Primary Blue: #073e72
+Primary Orange: #f8872b
+Light Gray: #e9edf1
+Light Blue Gray: #eaeff3
+White: #fff
+Box Shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1)
+*/
